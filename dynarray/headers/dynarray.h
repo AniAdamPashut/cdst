@@ -18,10 +18,6 @@ Array *array();
 /// @return The created array
 Array *array_with_capacity(unsigned int);
 
-/// @brief A simple function to free the array
-/// @param arr: The array to free
-void free_array(Array *);
-
 /// @brief returns the item in a specified index
 /// @param arr: The array
 /// @param index: The index of the item
@@ -58,5 +54,8 @@ void array_remove(Array *, void *);
 /// @return A new array
 Array *array_slice(Array *, unsigned int, unsigned int, unsigned int);
 
+/// @brief A simple function to free the array
+/// @param arr: The array to free
+void free_array(Array *);
 
 #endif

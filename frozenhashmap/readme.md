@@ -1,9 +1,13 @@
 # Frozen Hash Map
 > simple frozen hashmap implementation
 
-implements 4 simple hashmap functions:
-- `FrozenHashMap *frozen_hash_map(unsigned int);`
-- `HashEntry *fh_lookup(FrozenHashMap *, char *);`
-- `void fh_insert(FrozenHashMap *, char *, void *);`
-- `void fh_delete(FrozenHashMap *, char *);`
-- `void free_fhm(FrozenHashMap *);`
+## Functions:
+- `frozen_hash_map` - creates a new map
+- `fh_lookup` - lookup function in the map
+- `fh_insert` - inserts a new item into the map
+- `fh_delete` - deletes an item from the map
+- `free_fhm` - frees the map
+
+## Structures:
+- `HashBucket` - "private" bucket struct since non-frozen implementation wont use chaining
+- `FrozenHashMap` - The FrozenHashMap struct

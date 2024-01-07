@@ -3,10 +3,10 @@
 #include <string.h>
 
 unsigned int hash(char *key) {
-    unsigned int sumprod = 0;
+    unsigned int sum_product = 0;
     for (int i = 0; i < strlen(key); i++) {
-        sumprod += key[i];
-        sumprod *= key[i];
+        sum_product += key[i];
+        sum_product *= key[i];
     }
-    return sumprod;
+    return sum_product;
 }
