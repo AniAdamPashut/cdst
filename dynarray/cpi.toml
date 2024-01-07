@@ -1,0 +1,6 @@
+[package]
+name = "dynarray"
+version = "0.1.0"
+author = "you"
+
+dependencies = []

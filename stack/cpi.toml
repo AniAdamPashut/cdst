@@ -1,0 +1,12 @@
+[package]
+name = "stack"
+version = "0.1.0"
+author = "you"
+
+[[dependencies]]
+name = "linkedlist"
+version = "0.1.0"
+
+[[dependencies]]
+name = "frozenhashmap"
+version = "0.1.0"
