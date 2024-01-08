@@ -1,5 +1,5 @@
 # HashMap
-> despicable implementation of a hashmap using linear probing
+> despicable implementation of a dynamic hashmap using linear probing
 
 ## Functions: 
 - `hash_map` - creates a new hashmap with a capacity of 2
