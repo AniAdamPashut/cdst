@@ -1,0 +1,8 @@
+[package]
+name = "hashmap"
+version = "0.1.0"
+author = "you"
+
+[[dependencies]]
+name = "hashutils"
+version = "0.1.0"
