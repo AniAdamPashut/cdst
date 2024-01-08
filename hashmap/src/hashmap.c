@@ -112,9 +112,12 @@ hm_insert(
             he->key = original->key;
             he->item = original->item;
             new_taken[index_of_entry] = 1;
+            
         }
         hm->capacity *= 2;
+        free(hm->entries);
         hm->entries = new_entries;
+        free(hm->is_taken);
         hm->is_taken = new_taken;
     }
     unsigned int hash_of_target = hash(key);

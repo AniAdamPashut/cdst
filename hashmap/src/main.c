@@ -1,63 +1,63 @@
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-// #include "hashmap.h"
+#include "hashmap.h"
 
-// int main(int argc, char **argv) {
-//     printf("Hello, World!\n");
+int main(int argc, char **argv) {
+    printf("Hello, World!\n");
 
-//     HashMap *hm = hash_map();
+    HashMap *hm = hash_map();
 
-//     char *hmm = malloc(sizeof(char) * 4);
-//     strcpy(hmm, "cat");
+    char *hmm = malloc(sizeof(char) * 4);
+    strcpy(hmm, "cat");
 
-//     int *number = malloc(sizeof(int));
-//     *number = 3;
+    int *number = malloc(sizeof(int));
+    *number = 3;
      
-//     char *hmm2 = malloc(sizeof(char) * 4);
-//     strcpy(hmm2, "car");
+    char *hmm2 = malloc(sizeof(char) * 4);
+    strcpy(hmm2, "car");
 
-//     int *number2 = malloc(sizeof(int));
-//     *number2 = 4;
+    int *number2 = malloc(sizeof(int));
+    *number2 = 4;
 
-//     char *hmm3 = malloc(sizeof(char) * 4);
-//     strcpy(hmm3, "pin");
+    char *hmm3 = malloc(sizeof(char) * 4);
+    strcpy(hmm3, "pin");
 
-//     int *number3 = malloc(sizeof(int));
-//     *number3 = 5;
-
-
-//     printf("asdsda\n");
-//     hm_insert(hm, hmm, number);
-//     hm_insert(hm, hmm2, number2);
+    int *number3 = malloc(sizeof(int));
+    *number3 = 5;
 
 
-//     for (int i = 0; i < hm->capacity; i++) {
-//         printf("%d\n", *(hm->is_taken + i));
-//     }
+    printf("asdsda\n");
+    hm_insert(hm, hmm, number);
+    hm_insert(hm, hmm2, number2);
 
-//     hm_insert(hm, hmm3, number3);
 
-//     HashEntry *he = hm_lookup(hm, hmm3);
+    for (int i = 0; i < hm->capacity; i++) {
+        printf("%d\n", *(hm->is_taken + i));
+    }
 
-//     printf("size %d cap %d\n", hm->size, hm->capacity);
+    hm_insert(hm, hmm3, number3);
 
-//     printf("%s\n", he->key);
-//     printf("%d\n", *(int *)he->item);
+    HashEntry *he = hm_lookup(hm, hmm3);
 
-//     printf("\n");
+    printf("size %d cap %d\n", hm->size, hm->capacity);
 
-//     for (int i = 0; i < hm->capacity; i++) {
-//         printf("%d\n", *(hm->is_taken + i));
-//     }
+    printf("%s\n", he->key);
+    printf("%d\n", *(int *)he->item);
 
-//     he = hm_delete(hm, hmm2);
+    printf("\n");
 
-//     printf("%p\n", hm_lookup(hm, hmm2));
-//     printf("%s", he->key);
-//     printf(" %d\n", *(int *)he->item);
+    for (int i = 0; i < hm->capacity; i++) {
+        printf("%d\n", *(hm->is_taken + i));
+    }
 
-//     free_hashmap(hm);
-//     return 0;
-// }
+    he = hm_delete(hm, hmm2);
+
+    printf("%p\n", hm_lookup(hm, hmm2));
+    printf("%s", he->key);
+    printf(" %d\n", *(int *)he->item);
+
+    free_hashmap(hm);
+    return 0;
+}
